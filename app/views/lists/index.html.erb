@@ -1,0 +1,5 @@
+<h1>Lists#index</h1>
+<% @lists.each do |l| %>
+<p><%= l.name %></p>
+<%= link_to "See details", list_path(l), class: "btn btn-primary"%>
+<% end %>
