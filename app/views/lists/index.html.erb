@@ -2,4 +2,5 @@
 <% @lists.each do |l| %>
 <p><%= l.name %></p>
 <%= link_to "See details", list_path(l), class: "btn btn-primary"%>
+<%= link_to "New Bookmark", new_list_bookmark_path(l), class: "btn btn-primary"%>
 <% end %>
