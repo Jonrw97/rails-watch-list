@@ -1,9 +1,8 @@
 <h2>Details</h2>
 <p><%= @list.name %></p>
-<% @list.movies.each do |movie| %>
-  <% bookmark = @list.bookmarks.find_by(movie_id: movie.id) %>
-  <p><%= movie.title %></p>
-  <p><%= movie.overview %></p>
+<% @list.bookmarks.each do |bookmark| %>
+  <p><%= bookmark.movie.title %></p>
+  <p><%= bookmark.movie.overview %></p>
   <p><%= bookmark.comment %></p>
   <%= link_to "Delete",
     bookmark_path(bookmark),

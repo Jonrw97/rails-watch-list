@@ -11,8 +11,10 @@
   </head>
 
   <body>
-  <%= link_to "home", lists_path, class: "btn btn-primary"%>
-  <%= link_to "New List", new_list_path, class: "btn btn-primary"%>
-    <%= yield %>
+    <%= link_to "home", lists_path, class: "btn btn-primary"%>
+    <%= link_to "New List", new_list_path, class: "btn btn-primary"%>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
